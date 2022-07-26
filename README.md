@@ -1,5 +1,8 @@
-### New version: 0.3.0
-***(11/06/2022)***
+### New version: 0.3.1
+***(26/07/2022)***
+
+Updates for version 0.3.1:
+* **Login and Password**: now its possible to send login and password when you initialize the VPN.
 
 
 Updates for version 0.3.0:
