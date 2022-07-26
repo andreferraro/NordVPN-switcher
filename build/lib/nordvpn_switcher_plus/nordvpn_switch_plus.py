@@ -22,7 +22,7 @@ import requests
 import json
 # 5.package dependencies
 import importlib.resources as pkg_resources
-from nordvpn_switcher import NordVPN_options
+from nordvpn_switcher_plus import NordVPN_options
 
 ##################################
 #retrieve useragents for scraping#

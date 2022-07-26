@@ -1,39 +1,37 @@
-import setuptools
+import pathlib
+from setuptools import setup, find_packages
 
-with open("README.md", "r") as fh:
+HERE = pathlib.Path(__file__).parent
 
-    long_description = fh.read()
+VERSION = '0.3.1'
+PACKAGE_NAME = 'nordvpn_switcher_plus'
+AUTHOR = 'Andre Ferraro'
+AUTHOR_EMAIL = 'aferrarobr@gmail.com'
+URL = 'https://github.com/andreferraro/NordVPN-switcher'
 
-setuptools.setup(
+LICENSE = 'Apache License 2.0'
+DESCRIPTION = 'Rotate between different NordVPN servers with ease. Works both on Linux and Windows without any required changes to your code!'
+LONG_DESCRIPTION = (HERE / "README.md").read_text()
+LONG_DESC_TYPE = "text/markdown"
 
-    name="nordvpn_switcher_plus", # Replace with your username
+INSTALL_REQUIRES = ['psutil',
+'bs4',
+'requests',
+'lxml',
+'pathlib',
+'random_user_agent'
+]
 
-    version="0.3.1",
-
-    author="andreferraro",
-
-    author_email="aferrarobr@gmail.com",
-
-    description="Rotate between different NordVPN servers with ease. Works both on Linux and Windows without any required changes to your code!",
-
-    long_description=long_description,
-
-    long_description_content_type="text/markdown",
-
-    url="https://github.com/andreferraro/NordVPN-switcher",
-
-    packages=setuptools.find_packages(),
-
-    classifiers=[
-
-        "Programming Language :: Python :: 3",
-
-        "License :: OSI Approved :: MIT License",
-
-        "Operating System :: OS Independent",
-
-    ],
-
-    python_requires='>=3.6',
-
-)
+setup(name=PACKAGE_NAME,
+      version=VERSION,
+      description=DESCRIPTION,
+      long_description=LONG_DESCRIPTION,
+      long_description_content_type=LONG_DESC_TYPE,
+      author=AUTHOR,
+      license=LICENSE,
+      author_email=AUTHOR_EMAIL,
+      url=URL,
+      install_requires=INSTALL_REQUIRES,
+      packages=find_packages(),
+      include_package_data=True
+      )

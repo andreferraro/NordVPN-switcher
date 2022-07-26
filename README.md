@@ -107,7 +107,7 @@ OR, for the ones who don't use pip for some reason:
 * Download/clone this repository
 * Run `pip install -r requirements.txt` to install dependencies
 
-3. Import functions`from nordvpn_switcher import initialize_VPN,rotate_VPN,terminate_VPN
+3. Import functions`from nordvpn_switcher_plus import initialize_VPN,rotate_VPN,terminate_VPN
 
 4. Rotate between servers, for example: 
 
@@ -156,7 +156,7 @@ That's it!
 The easiest and most user-friendly (although least automated) way of using NordVPN switcher is by saving the instructions into a new variable and feeding it to the rotate_VPN() function. 
 
 ```
-from nordvpn_switcher import initialize_VPN,rotate_VPN,terminate_VPN
+from nordvpn_switcher_plus import initialize_VPN,rotate_VPN,terminate_VPN
 
 settings = initialize_VPN() 
 rotate_VPN(settings) 

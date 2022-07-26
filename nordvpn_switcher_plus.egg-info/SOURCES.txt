@@ -1,6 +1,16 @@
+MANIFEST.in
 README.md
+setup.cfg
 setup.py
+nordvpn_switcher_plus/__init__.py
+nordvpn_switcher_plus/demo.py
+nordvpn_switcher_plus/nordvpn_switch_plus.py
 nordvpn_switcher_plus.egg-info/PKG-INFO
 nordvpn_switcher_plus.egg-info/SOURCES.txt
 nordvpn_switcher_plus.egg-info/dependency_links.txt
+nordvpn_switcher_plus.egg-info/requires.txt
 nordvpn_switcher_plus.egg-info/top_level.txt
+nordvpn_switcher_plus/NordVPN_options/__init__.py
+nordvpn_switcher_plus/NordVPN_options/countrylist.txt
+nordvpn_switcher_plus/NordVPN_options/options_linux.txt
+nordvpn_switcher_plus/NordVPN_options/__pycache__/__init__.cpython-38.pyc
